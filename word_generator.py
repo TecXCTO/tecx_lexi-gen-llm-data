@@ -10,7 +10,7 @@ class Iterative_Nested_Word_Generator:
     self.iterative_nested_generator()
     # self.iterative_nested_generator(self.current_word)
     
-  def iterative_nested_generator(self, given_word = []):
+  def iterative_nested_generator(self, given_word = ""):
     gw = given_word
     created_word = []
     for lc in self.lowercase:
