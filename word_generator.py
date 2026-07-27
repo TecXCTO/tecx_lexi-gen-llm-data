@@ -18,5 +18,5 @@ class Iterative_Nested_Word_Generator:
     yield created_word
     # return created_word
 if __name__ == "__main__":
-  inwg = Iterative_Nested_Word_Generator
+  inwg = Iterative_Nested_Word_Generator()
   print(f"The Current Word Vocabulary are = {inwg.current_word}")
