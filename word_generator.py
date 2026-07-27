@@ -18,7 +18,7 @@ class Iterative_Nested_Word_Generator:
       for lc in self.lowercase:
         created_word += [gw + lc]
         print(f"The Created Word is = {created_word}")
-        if len(created_word[-1]) <= 4:
+        if len(created_word[-1]) < 4:
           self.iterative_nested_generator(created_word[-1])
         #elif len(created_word) > 4: return
     else:
