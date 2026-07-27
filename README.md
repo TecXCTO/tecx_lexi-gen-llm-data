@@ -28,13 +28,7 @@ tecx_lexi-gen-llm-data/
 
 ## 📄 File-by-File Breakdown##
 
-## 2. requirements.txt
-Dependencies needed for data synthesis, text processing, and dataset formatting.
 
-nltk>=3.8.1
-tqdm>=4.66.0
-
-## 3. README.md
 Clear instructions on how the autonomous pipeline works.
 
 # Lexi-Gen LLM Data Builder
