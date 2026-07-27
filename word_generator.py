@@ -7,7 +7,7 @@ class Iterative_Nested_Word_Generator:
     self.lowercase = sorted(string.ascii_lowercase)          # a-z (26)
     # self.current_word = self.lowercase
     self.current_word = []
-    self.iterative_nested_generator()
+    self.current_word = self.iterative_nested_generator()
     # self.iterative_nested_generator(self.current_word)
     
   def iterative_nested_generator(self, given_word = ""):
@@ -18,7 +18,7 @@ class Iterative_Nested_Word_Generator:
       created_word += [gw + lc]
       #created_word.append(gw + lc)
       print(f"The Created Word is = {created_word}")
-      if len(created_word) <= 4:
+      if len(created_word[-1]) <= 4:
         self.iterative_nested_generator(created_word[-1])
       elif len(created_word) > 4: return
     # yield created_word
