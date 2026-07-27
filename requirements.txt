@@ -1,0 +1,4 @@
+# Dependencies needed for data synthesis, text processing, and dataset formatting.
+
+nltk>=3.8.1
+tqdm>=4.66.0
