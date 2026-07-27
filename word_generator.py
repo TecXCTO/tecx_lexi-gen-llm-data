@@ -4,7 +4,7 @@ class Iterative_Nested_Word_Generator:
   def __init__(self):
     print("Iterative_nlNested_Word_Generator has been started.")
     # self.lowercase = string.ascii_lowercase          # a-z (26)
-    self.lowercase = sort(string.ascii_lowercase)          # a-z (26)
+    self.lowercase = sorted(string.ascii_lowercase)          # a-z (26)
     self.current_word = self.lowercase
     # self.current_word = sort(self.lowercase)
     self.iterative_nested_generator(self.current_word)
