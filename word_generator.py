@@ -40,5 +40,6 @@ class Iterative_Nested_Word_Generator:
     print(f"The Created Word is before return = {created_word}")
     return created_word
 if __name__ == "__main__":
-  inwg = Iterative_Nested_Word_Generator(2)
+  loc = input("Please, Enter Length of Character.")
+  inwg = Iterative_Nested_Word_Generator(loc)
   print(f"The Current Word Vocabulary are = {inwg.current_word}")
