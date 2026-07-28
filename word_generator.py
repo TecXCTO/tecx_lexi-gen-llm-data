@@ -44,7 +44,7 @@ class Word_Rearranger:
     loc = int(input("Please, Enter Length of Character."))
     inwg = Iterative_Nested_Word_Generator(loc)
     print(f"The Current Word Vocabulary are = {inwg.current_word}")
-    self.word_arrangement(inwg.current_word)
+    self.increasing_order_worde = self.word_arrangement(inwg.current_word)
   def word_arrangement(self, words):
     given_words = words
     rearranged_words = []
@@ -58,10 +58,17 @@ class Word_Rearranger:
     """
     for i in range(len(given_words)):
       rearranged_words += given_words[i] if given_words[i] and len(given_words[i]) == 1 else given_words[i][0]
-      if len(given_words)<27:
-      elif len(given_words) == 27:
+    if len(given_words)<27 and len(given_words) > 0:
+      for i in range(len(given_words)):
+        if given_words[i] and len(given_words[i]) > 1
+        rearranged_words +=  word_arrangement(given_words[i][0])
       
-      
+    elif len(given_words) == 27:
+      rearranged_words += given_words[1 :]
+      # if len(given_words)<27 and len(given_words) > 0:
+        # for i in range(1,len(given_words)):
+          # rearranged_words += given_words[i] if given_words[i] and len(given_words[i]) == 1 else given_words[i][0]
+    return rearranged_words
       
 if __name__ == "__main__":
   while True:
@@ -69,5 +76,7 @@ if __name__ == "__main__":
     inwg = Iterative_Nested_Word_Generator(loc)
     print(f"The Current Word Vocabulary are = {inwg.current_word}")
     if loc == None:
+      wra = Word_Rearranger()
+      wra.increasing_order_worde
       break
     
