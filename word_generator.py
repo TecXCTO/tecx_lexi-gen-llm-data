@@ -70,12 +70,14 @@ class Word_Rearranger:
     return rearranged_words
       
 if __name__ == "__main__":
+  wra = Word_Rearranger()
+  wra.increasing_order_worde
   while True:
     loc = int(input("Please, Enter Length of Character."))
     inwg = Iterative_Nested_Word_Generator(loc)
     print(f"The Current Word Vocabulary are = {inwg.current_word}")
     if loc == None:
-      wra = Word_Rearranger()
-      wra.increasing_order_worde
+      # wra = Word_Rearranger()
+      #wra.increasing_order_worde
       break
     
