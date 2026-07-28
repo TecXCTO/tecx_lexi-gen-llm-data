@@ -60,9 +60,8 @@ class Word_Rearranger:
       rearranged_words += given_words[i] if given_words[i] and len(given_words[i]) == 1 else given_words[i][0]
     if len(given_words)<27 and len(given_words) > 0:
       for i in range(len(given_words)):
-        if given_words[i] and len(given_words[i]) > 1
-        rearranged_words +=  word_arrangement(given_words[i][0])
-      
+        if given_words[i] and len(given_words[i]) > 1:
+          rearranged_words +=  word_arrangement(given_words[i][0])
     elif len(given_words) == 27:
       rearranged_words += given_words[1 :]
       # if len(given_words)<27 and len(given_words) > 0:
