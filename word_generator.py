@@ -39,6 +39,30 @@ class Iterative_Nested_Word_Generator:
     # yield created_word
     print(f"The Created Word is before return = {created_word}")
     return created_word
+class Word_Rearranger:
+  def __init__(self):
+    loc = int(input("Please, Enter Length of Character."))
+    inwg = Iterative_Nested_Word_Generator(loc)
+    print(f"The Current Word Vocabulary are = {inwg.current_word}")
+    self.word_arrangement(inwg.current_word)
+  def word_arrangement(self, words):
+    given_words = words
+    rearranged_words = []
+    """
+    if len(given_words)<27:
+      for i in range(26):
+        # rearranged_words[i]=given_words[i]
+        rearranged_words += given_words[i]
+        
+    elif len(given_words) == 27:
+    """
+    for i in range(len(given_words)):
+      rearranged_words += given_words[i] if given_words[i] and len(given_words[i]) == 1 else given_words[i][0]
+      if len(given_words)<27:
+      elif len(given_words) == 27:
+      
+      
+      
 if __name__ == "__main__":
   while True:
     loc = int(input("Please, Enter Length of Character."))
